@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap");
+.drag img {
+  width: 600px;
+}
+
+.drag .drag_and_drog_zone {
+  border: dashed 1px black;
+}
+
+.drag .drag_and_drog_zone img {
+  width: 300px;
+}
+/*# sourceMappingURL=main.css.map */

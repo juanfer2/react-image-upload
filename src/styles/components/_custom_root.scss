@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap');
+
+:root {
+  $colorInitial: black;
+}
+
+.drag {
+  img {
+    width: 600px;
+  }
+  .drag_and_drog_zone {
+    border: dashed 1px black;
+    img {
+      width: 300px;
+    }
+  }
+}

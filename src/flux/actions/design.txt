@@ -1,0 +1,4 @@
+<iframe class="my_iframe" src="https://carvajal-5e1ed.firebaseapp.com/inventory/rawmaterialentry?userid=admin" if="my_iframe" marginwidth="0" marginheight="0" name="ventana_iframe" scrolling="yes" border="0" frameborder="0" width="1300" height="550" style="
+    position: absolute;
+    left: -189px;
+"> </iframe>
