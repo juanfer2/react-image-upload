@@ -15,7 +15,7 @@ function DragZone({ children }: InferProps<typeof DragZone.propTypes>) {
   const useUploading = UseUploading()
 
   const {state, dropRef}: {state:any, dropRef:any} = useUploading
-  const {isUploading, dragging, isInvalidFile, stageUpload}: {image:string, dragging:boolean, isUploading:boolean, isInvalidFile: boolean, stageUpload:number} = state
+  const {isUploading, dragging, isInvalidFile, stageUpload, image}: {image:string, dragging:boolean, isUploading:boolean, isInvalidFile: boolean, stageUpload:number} = state
 
   return (
     <div ref={dropRef} className="drag_and_drog">
@@ -24,7 +24,7 @@ function DragZone({ children }: InferProps<typeof DragZone.propTypes>) {
           <Uploading/> : 
           <div>
             {stageUpload === 1 && <DragAndDrogContent dragging={dragging} isInvalidFile={isInvalidFile} />}
-            {stageUpload === 2 && <UploadSuccess /> }
+            {stageUpload === 2 && <UploadSuccess image={image} /> }
           </div>
 
       }

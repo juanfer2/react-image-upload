@@ -221,6 +221,11 @@ button button:focus {
   position: relative;
 }
 
+.container-drag-and-drog .drag_and_drog .upload-success img {
+  width: 400px;
+  border-radius: 8px;
+}
+
 .container-drag-and-drog .drag_and_drog .upload-success .icon-success {
   color: #43853d;
 }

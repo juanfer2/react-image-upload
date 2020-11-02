@@ -113,6 +113,10 @@
       }
     }
     .upload-success {
+      img {
+        width: 400px;
+        border-radius: 8px;
+      }
       .icon-success {
         color: #43853d;
       }

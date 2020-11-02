@@ -1,5 +1,7 @@
 import React, {useRef} from 'react'
-function UploadSuccess() {
+import PropTypes, { InferProps } from 'prop-types'
+
+function UploadSuccess({ image  }: InferProps<typeof UploadSuccess.propTypes>) {
 
   const textRef = useRef(null)
 
@@ -24,6 +26,9 @@ function UploadSuccess() {
     <div className="upload-success" >
       <i className="material-icons icon-success">check_circle</i>
       <h4 className="title">Uploaded Successfully!</h4>
+
+      <img src={image} alt="" />
+
       <div className="container-link-img">
         <div className="url-content">
           <p ref={textRef} className="url">1234567123asdfasdfasdfasdfasdfasdf234242342342423423424234242j</p>
@@ -32,6 +37,10 @@ function UploadSuccess() {
       </div>
     </div>
   )
+}
+
+UploadSuccess.propTypes = {
+  image: PropTypes.string.isRequired
 }
 
 export default UploadSuccess
