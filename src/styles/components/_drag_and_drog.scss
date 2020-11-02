@@ -113,6 +113,7 @@
       }
     }
     .upload-success {
+      position: relative;
       .title {
         font-family: Poppins;
         font-style: normal;
@@ -124,6 +125,33 @@
         letter-spacing: -0.035em;
         /* Gray 2 */
         color: #4f4f4f;
+      }
+      .container-link-img {
+        display: flex;
+        padding: 1.5px;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        justify-content: space-between;
+        justify-items: center;
+        background: #f6f8fb;
+        .url-content {
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          margin-right: 5px;
+        }
+        .url {
+          font-family: Poppins;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 10px;
+          line-height: 12px;
+          /* identical to box height */
+          text-align: center;
+          letter-spacing: -0.035em;
+          /* Gray 2 */
+          color: #4f4f4f;
+        }
       }
     }
   }

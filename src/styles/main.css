@@ -146,11 +146,11 @@ button button:focus {
   border-radius: 8px;
 }
 
-.container-drag-and-drog .uploading .title {
+.container-drag-and-drog .drag_and_drog .uploading .title {
   text-align: left;
 }
 
-.container-drag-and-drog .uploading .title h5 {
+.container-drag-and-drog .drag_and_drog .uploading .title h5 {
   font-family: Poppins;
   font-style: normal;
   font-weight: 500;
@@ -162,7 +162,7 @@ button button:focus {
   color: #4f4f4f;
 }
 
-.container-drag-and-drog .uploading .meter {
+.container-drag-and-drog .drag_and_drog .uploading .meter {
   height: 6px;
   width: 100%;
   /* Gray 6 */
@@ -171,7 +171,7 @@ button button:focus {
   overflow: hidden;
 }
 
-.container-drag-and-drog .uploading .meter .meter-medidor {
+.container-drag-and-drog .drag_and_drog .uploading .meter .meter-medidor {
   z-index: 2;
   height: 6px;
   width: 20%;
@@ -182,6 +182,57 @@ button button:focus {
           transform: translateX(0vw);
   -webkit-animation: uploading 2.5s linear infinite;
           animation: uploading 2.5s linear infinite;
+}
+
+.container-drag-and-drog .drag_and_drog .upload-success {
+  position: relative;
+}
+
+.container-drag-and-drog .drag_and_drog .upload-success .title {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: -0.035em;
+  /* Gray 2 */
+  color: #4f4f4f;
+}
+
+.container-drag-and-drog .drag_and_drog .upload-success .container-link-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1.5px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  justify-items: center;
+  background: #f6f8fb;
+}
+
+.container-drag-and-drog .drag_and_drog .upload-success .container-link-img .url-content {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-right: 5px;
+}
+
+.container-drag-and-drog .drag_and_drog .upload-success .container-link-img .url {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: -0.035em;
+  /* Gray 2 */
+  color: #4f4f4f;
 }
 
 .dragging {

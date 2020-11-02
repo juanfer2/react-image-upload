@@ -7,6 +7,7 @@ import { UseUploading } from '../useUploading'
 /** Components */ 
 import Uploading from './uploading'
 import DragAndDrogContent from './dragAndDrogContent'
+import UploadSuccess from './uploadSuccess'
 
 
 function DragZone({ children }: InferProps<typeof DragZone.propTypes>) {
@@ -18,11 +19,12 @@ function DragZone({ children }: InferProps<typeof DragZone.propTypes>) {
 
   return (
     <div ref={dropRef} className="drag_and_drog">
-      {
+       <UploadSuccess/> 
+      {/*
         isUploading ? 
           <Uploading/> : 
           <DragAndDrogContent dragging={dragging} isInvalidFile={isInvalidFile} />
-      }
+      */}
     </div>
   )
 }
