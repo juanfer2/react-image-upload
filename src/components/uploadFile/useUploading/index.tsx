@@ -7,7 +7,8 @@ export const UseUploading = () => {
     image: '',
     dragCounter: 0,
     dragging: false,
-    isInvalidFile: false
+    isInvalidFile: false,
+    stageUpload: 1
   })
 
   const dropRef = useRef(null)
@@ -64,11 +65,11 @@ export const UseUploading = () => {
         reader.onload = (e:any)=> {
           const img = reader.result
          // e.dataTransfer.clearData()
-          setState({...state, image: img,  dragCounter: 0})
+          setState({...state, image: img,  dragCounter: 0, stageUpload: 2})
         }
         reader.readAsDataURL(e.dataTransfer.files[0])
       }else{
-        setState({...state, isUploading: false, isInvalidFile: true})
+        setState({...state, isUploading: false, isInvalidFile: true, stageUpload: 1})
       }
     }
   }

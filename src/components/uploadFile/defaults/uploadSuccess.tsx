@@ -1,5 +1,4 @@
 import React, {useRef} from 'react'
-
 function UploadSuccess() {
 
   const textRef = useRef(null)
@@ -23,6 +22,7 @@ function UploadSuccess() {
 
   return (
     <div className="upload-success" >
+      <i className="material-icons icon-success">check_circle</i>
       <h4 className="title">Uploaded Successfully!</h4>
       <div className="container-link-img">
         <div className="url-content">
