@@ -1,10 +1,11 @@
 import React from 'react'
-import UploadImage from '../../../assets/images/upload_icon.png'
+import UploadImage from '../../../assets/images/upload_files.svg'
 
-function MessageDragAndDrog() {
+function MessageDragAndDrog({dragging}: {dragging:boolean}) {
   return (
-    <div className="drag_and_drog_zone">
+    <div className={"drag_and_drog_zone " + (dragging ? 'dragging':'')}>
       <img src={UploadImage} alt="upload_file_image"/>
+      <p className="description">Drag & Drop your image here</p>
     </div>
   )
 }

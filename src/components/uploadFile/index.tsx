@@ -4,9 +4,9 @@ import DragZone from './defaults/dragZone'
 
 function UploadFile() {
   return (
-    <DragZone>
-      <h1>text</h1>
-    </DragZone>
+    <div className="container-drag-and-drog">
+      <DragZone/>
+    </div>
   )
 }
 

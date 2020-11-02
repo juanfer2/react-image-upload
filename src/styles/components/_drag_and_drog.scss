@@ -1,0 +1,138 @@
+.container-drag-and-drog {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 15px;
+  .drag_and_drog {
+    width: 402px;
+    background: #ffffff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 15px 32px 15px 32px;
+    .title {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 27px;
+      /* identical to box height */
+      letter-spacing: -0.035em;
+      /* Gray 2 */
+      color: #4f4f4f;
+    }
+    .sub-title {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 10px;
+      line-height: 15px;
+      /* identical to box height */
+      text-align: center;
+      letter-spacing: -0.035em;
+      /* Gray 3 */
+      color: #828282;
+    }
+    img {
+      width: 600px;
+    }
+    &_zone {
+      padding: 30px;
+      border: 1px dashed #97bef4;
+      box-sizing: border-box;
+      border-radius: 12px;
+      background: #f6f8fb;
+      img {
+        width: 114px;
+        margin-bottom: 15px;
+      }
+      .description {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        /* identical to box height */
+
+        letter-spacing: -0.035em;
+
+        /* Gray 4 */
+
+        color: #bdbdbd;
+      }
+    }
+    .or {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 18px;
+      /* identical to box height */
+
+      text-align: center;
+      letter-spacing: -0.035em;
+
+      /* Gray 4 */
+
+      color: #bdbdbd;
+    }
+    .button-choose-file {
+      border-radius: 8px;
+    }
+  }
+  .uploading {
+    .title {
+      text-align: left;
+      h5 {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        /* identical to box height */
+        letter-spacing: -0.035em;
+        /* Gray 2 */
+        color: #4f4f4f;
+      }
+    }
+    .meter {
+      height: 6px;
+      width: 100%;
+      /* Gray 6 */
+      background: #f2f2f2;
+      border-radius: 8px;
+      overflow: hidden;
+      .meter-medidor {
+        z-index: 2;
+        height: 6px;
+        width: 20%;
+        /* Blue 1 */
+        background: #2f80ed;
+        border-radius: 8px;
+        transform: translateX(0vw);
+        animation: uploading 2.5s linear infinite;
+      }
+    }
+  }
+}
+
+.dragging {
+  background: white;
+}
+
+@keyframes uploading {
+  0% {
+    transform: translateX(0vh);
+  }
+  25% {
+    transform: translateX(25vh);
+  }
+  50% {
+    transform: translateX(50vh);
+  }
+  75% {
+    transform: translateX(75vh);
+  }
+  100% {
+    transform: translateX(85vh);
+  }
+}
