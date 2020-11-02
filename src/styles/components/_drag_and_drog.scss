@@ -78,38 +78,52 @@
     .button-choose-file {
       border-radius: 8px;
     }
-  }
-  .uploading {
-    .title {
-      text-align: left;
-      h5 {
+    .uploading {
+      .title {
+        text-align: left;
+        h5 {
+          font-family: Poppins;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 27px;
+          /* identical to box height */
+          letter-spacing: -0.035em;
+          /* Gray 2 */
+          color: #4f4f4f;
+        }
+      }
+      .meter {
+        height: 6px;
+        width: 100%;
+        /* Gray 6 */
+        background: #f2f2f2;
+        border-radius: 8px;
+        overflow: hidden;
+        .meter-medidor {
+          z-index: 2;
+          height: 6px;
+          width: 20%;
+          /* Blue 1 */
+          background: #2f80ed;
+          border-radius: 8px;
+          transform: translateX(0vw);
+          animation: uploading 2.5s linear infinite;
+        }
+      }
+    }
+    .upload-success {
+      .title {
         font-family: Poppins;
         font-style: normal;
         font-weight: 500;
         font-size: 18px;
         line-height: 27px;
         /* identical to box height */
+        text-align: center;
         letter-spacing: -0.035em;
         /* Gray 2 */
         color: #4f4f4f;
-      }
-    }
-    .meter {
-      height: 6px;
-      width: 100%;
-      /* Gray 6 */
-      background: #f2f2f2;
-      border-radius: 8px;
-      overflow: hidden;
-      .meter-medidor {
-        z-index: 2;
-        height: 6px;
-        width: 20%;
-        /* Blue 1 */
-        background: #2f80ed;
-        border-radius: 8px;
-        transform: translateX(0vw);
-        animation: uploading 2.5s linear infinite;
       }
     }
   }
